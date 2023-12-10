@@ -1827,8 +1827,8 @@ class ClusterPubSub(PubSub):
             # There are no subscriptions anymore, set subscribed_event flag
             # to false
             self.subscribed_event.clear()
-        if self.ignore_subscribe_messages or ignore_subscribe_messages:
-            return None
+        # if self.ignore_subscribe_messages or ignore_subscribe_messages:
+        #     return None
         return message
 
     def ssubscribe(self, *args, **kwargs):
